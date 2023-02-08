@@ -19,4 +19,9 @@ public class EchoPluginPlugin extends Plugin {
         ret.put("value", implementation.echo(value));
         call.resolve(ret);
     }
+
+    @PluginMethod
+    public void DemoMethod(String name) {
+    System.out.println("Entered name is : " + name);
+    }
 }
